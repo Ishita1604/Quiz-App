@@ -1,0 +1,100 @@
+object PlayForm: TPlayForm
+  Left = 0
+  Top = 0
+  Caption = 'QuizMan - Stay Focused!'
+  ClientHeight = 315
+  ClientWidth = 527
+  Position = DesktopCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Option1RadioButton: TRadioButton
+    Position.X = 40.000000000000000000
+    Position.Y = 80.000000000000000000
+    Size.Width = 448.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'Option1RadioButton'
+    OnChange = Option1RadioButtonChange
+  end
+  object Option2RadioButton: TRadioButton
+    Position.X = 40.000000000000000000
+    Position.Y = 120.000000000000000000
+    Size.Width = 448.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Option2RadioButton'
+    OnChange = Option2RadioButtonChange
+  end
+  object Option3RadioButton: TRadioButton
+    Position.X = 40.000000000000000000
+    Position.Y = 160.000000000000000000
+    Size.Width = 448.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'Option3RadioButton'
+    OnChange = Option3RadioButtonChange
+  end
+  object Option4RadioButton: TRadioButton
+    Position.X = 40.000000000000000000
+    Position.Y = 200.000000000000000000
+    Size.Width = 448.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'Option4RadioButton'
+    OnChange = Option4RadioButtonChange
+  end
+  object PreviousButton: TButton
+    Position.X = 40.000000000000000000
+    Position.Y = 240.000000000000000000
+    TabOrder = 4
+    Text = 'Previous'
+    OnClick = PreviousButtonClick
+  end
+  object SaveNextButton: TButton
+    Position.X = 160.000000000000000000
+    Position.Y = 240.000000000000000000
+    TabOrder = 5
+    Text = 'Save and Next'
+    OnClick = SaveNextButtonClick
+  end
+  object PointsLabel: TLabel
+    StyledSettings = [Family, FontColor]
+    Position.X = 408.000000000000000000
+    Position.Y = 28.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 36.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 20.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    Text = 'Points :'
+    TabOrder = 6
+  end
+  object ScoreLabel: TLabel
+    StyledSettings = [Family, FontColor]
+    Position.X = 486.000000000000000000
+    Position.Y = 28.000000000000000000
+    Size.Width = 33.000000000000000000
+    Size.Height = 36.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 20.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    Text = '0'
+    TabOrder = 7
+  end
+  object QuestionLabel: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 40.000000000000000000
+    Size.Width = 360.000000000000000000
+    Size.Height = 99.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 16.000000000000000000
+    Text = 'QuestionLabel'
+    TabOrder = 8
+  end
+end
